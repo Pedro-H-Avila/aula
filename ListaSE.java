@@ -3,7 +3,7 @@ public class ListaSE{
 	public ListaSE () {
 	firstCell = null;
 	}
-	public void revoveEnd (Celula c){
+	public void removeEnd (Celula c){
 		Celula auxfirstCell = firstCell;
 		if (auxfirstCell == null){
 			firstCell = null;
@@ -16,7 +16,7 @@ public class ListaSE{
 
 	public void inserirNoFim(Celula c) {
 		if (empty()) {
-			firstCell = null;
+			firstCell = c;
 		}
 		else {
 		Celula aux = firstCell;
