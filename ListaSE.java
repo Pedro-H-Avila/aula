@@ -8,9 +8,16 @@ public class ListaSE{
 	public void inserirNoFim(Celula firstCell) {
 		if (empty()) {
 			firstCell = null
+		}else {
+		Celula aux = firstCell;
+		while (aux.prox != null){
+			aux = aux.prox;
 		}
+		aux.prox = c;
 	}
 	public void inserirNoInicio( Celula firstCell) {
+		c.prox = firstCell;
+		primeiro = c;
 
 	}
 	public void printer (){
