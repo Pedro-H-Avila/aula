@@ -8,8 +8,8 @@ public class Main {
         ListaSE numeros = new ListaSE();
     
         numeros.inserirNoInicio(c1);
-        numeros.inserirAoFinal(c2);
+        numeros.inserirNoFim(c2);
         numeros.inserirNoInicio(c3);
-        numeros.imprimir();
+        numeros.printer();
     }
 }
