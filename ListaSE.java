@@ -1,14 +1,24 @@
 public class ListaSE{ 
-	Celula firstCell;
-		firstCell = null
+	Celula firstCell;																																				
+	public ListaSE () {
+	firstCell = null;
 	}
+	public void revoveEnd (Celula c){
+		Celula auxfirstCell = firstCell;
+		if (auxfirstCell == null){
+			firstCell = null;
+		}
+	}
+
 	public boolean empty() {
 		return (firstCell == null);
 	}
-	public void inserirNoFim(Celula firstCell) {
+
+	public void inserirNoFim(Celula c) {
 		if (empty()) {
-			firstCell = null
-		}else {
+			firstCell = null;
+		}
+		else {
 		Celula aux = firstCell;
 		while (aux.prox != null){
 			aux = aux.prox;
@@ -16,9 +26,9 @@ public class ListaSE{
 		aux.prox = c;
 	}
 }
-	public void inserirNoInicio( Celula firstCell) {
+	public void inserirNoInicio( Celula c) {
 		c.prox = firstCell;
-		primeiro = c;
+		firstCell = c;
 
 	}
 	public void printer (){
@@ -28,5 +38,5 @@ public class ListaSE{
 			aux = aux.prox;
 		}
 	}
-
+		
 }
