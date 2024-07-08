@@ -15,6 +15,7 @@ public class ListaSE{
 		}
 		aux.prox = c;
 	}
+}
 	public void inserirNoInicio( Celula firstCell) {
 		c.prox = firstCell;
 		primeiro = c;
@@ -27,4 +28,5 @@ public class ListaSE{
 			aux = aux.prox;
 		}
 	}
+
 }
