@@ -11,5 +11,13 @@ public class Main {
         numeros.inserirNoFim(c2);
         numeros.inserirNoInicio(c3);
         numeros.printer();
+
+
+        Celula encontrada = lista.pesquisar(20);
+        if (encontrada != null) {
+            System.out.println("Valor encontrado: " + encontrada.valor);
+        } else {
+            System.out.println("Valor não encontrado.");
+        }
     }
 }

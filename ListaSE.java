@@ -51,6 +51,17 @@ public class ListaSE{
         }
     }
 //-------------------------------------------------------------------------------------------
+public Celula pesquisar(int v) {
+        Celula aux = firstCell;
+        while (aux != null) {
+            if (aux.valor == v) {
+                return aux;
+            }
+            aux = aux.prox;
+        }
+        return null;
+    }
+//-------------------------------------------------------------------------------------------
 	public void printer (){
 		Celula aux = firstCell;
 		while( aux != null){
