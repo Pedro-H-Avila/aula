@@ -1,49 +1,16 @@
-<<<<<<< HEAD
-public class ListaSE {
-    Celula next;
-=======
-public class ListaSE{ 
-	Celula firstCell;																																				
+public class ListaSE{ 	Celula firstCell;	
+
 	public ListaSE () {
-	firstCell = null;
-	}
-	public void removeEnd (Celula c){
-		Celula auxfirstCell = firstCell;
-		if (auxfirstCell == null){
-			firstCell = null;
-		}
-	}
->>>>>>> 201c46b9a3773bd22f8242c104cd966dc84bdda4
-
-<<<<<<< HEAD
-    ListaSE(){
-        pcelula = null;
-    }
-
-    public boolean empty(){
-        return (pcelula == null);
-    }
-    public void insereNoFim(){
-
-    }
-    public void insereNoInicio (Celula c){
-        c.next = pcelula;
-        pcelula = c;
-    }
-    public void imprimir (){
-        Celula aux = pcelula;
-           While(aux != null);{
-             System.out.println("value: " + aux.value);
-             aux = aux.next;
-        }
-    }
-}
-
-=======
+	firstCell = null;}
 	public boolean empty() {
 		return (firstCell == null);
 	}
-
+//-------------------------------------------------------------------------------------------
+	public void inserirNoInicio(Celula c) {
+        c.prox = firstCell;
+        firstCell = c;
+    }
+//-------------------------------------------------------------------------------------------
 	public void inserirNoFim(Celula c) {
 		if (empty()) {
 			firstCell = c;
@@ -53,14 +20,18 @@ public class ListaSE{
 		while (aux.prox != null){
 			aux = aux.prox;
 		}
-		aux.prox = c;
+			aux.prox = c;
+		}
 	}
-}
-	public void inserirNoInicio( Celula c) {
-		c.prox = firstCell;
-		firstCell = c;
-
-	}
+//-------------------------------------------------------------------------------------------
+	 public boolean removerInicio() {
+        if (firstCell == null) {
+            return false; // Lista está vazia
+        }
+        firstCell = firstCell.prox; // Atualiza o início para a próxima célula
+        return true;
+    }
+//-------------------------------------------------------------------------------------------
 	 public void removerFim() {
         if (firstCell == null) {
             return; // Lista vazia
@@ -76,6 +47,7 @@ public class ListaSE{
             aux.prox = null; // Remove a última célula
         }
     }
+//-------------------------------------------------------------------------------------------
 	public void printer (){
 		Celula aux = firstCell;
 		while( aux != null){
@@ -86,4 +58,3 @@ public class ListaSE{
 		
 }
 
->>>>>>> 201c46b9a3773bd22f8242c104cd966dc84bdda4
