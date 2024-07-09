@@ -10,9 +10,9 @@ public class Main {
         numeros.inserirNoInicio(c1);
         numeros.inserirNoFim(c2);
         numeros.inserirNoInicio(c3);
-        numeros.printer();
+        
 
 
-       
+        
     }
 }
