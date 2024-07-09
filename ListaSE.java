@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+public class ListaSE {
+    Celula next;
+=======
 public class ListaSE{ 
 	Celula firstCell;																																				
 	public ListaSE () {
@@ -9,7 +13,33 @@ public class ListaSE{
 			firstCell = null;
 		}
 	}
+>>>>>>> 201c46b9a3773bd22f8242c104cd966dc84bdda4
 
+<<<<<<< HEAD
+    ListaSE(){
+        pcelula = null;
+    }
+
+    public boolean empty(){
+        return (pcelula == null);
+    }
+    public void insereNoFim(){
+
+    }
+    public void insereNoInicio (Celula c){
+        c.next = pcelula;
+        pcelula = c;
+    }
+    public void imprimir (){
+        Celula aux = pcelula;
+           While(aux != null);{
+             System.out.println("value: " + aux.value);
+             aux = aux.next;
+        }
+    }
+}
+
+=======
 	public boolean empty() {
 		return (firstCell == null);
 	}
@@ -55,3 +85,5 @@ public class ListaSE{
 	}
 		
 }
+
+>>>>>>> 201c46b9a3773bd22f8242c104cd966dc84bdda4
