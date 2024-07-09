@@ -31,6 +31,21 @@ public class ListaSE{
 		firstCell = c;
 
 	}
+	 public void removerFim() {
+        if (firstCell == null) {
+            return; // Lista vazia
+        }
+
+        if (firstCell.prox == null) {
+            firstCell = null; // Lista com apenas um elemento
+        } else {
+            Celula aux = firstCell;
+            while (aux.prox.prox != null) {
+                aux = aux.prox;
+            }
+            aux.prox = null; // Remove a última célula
+        }
+    }
 	public void printer (){
 		Celula aux = firstCell;
 		while( aux != null){
