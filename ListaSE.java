@@ -1,7 +1,10 @@
-public class ListaSE{ 	Celula firstCell;	
+public class ListaSE{ 
+	Celula firstCell;	
 
 	public ListaSE () {
-	firstCell = null;}
+	firstCell = null;
+	}
+//-------------------------------------------------------------------------------------------
 	public boolean empty() {
 		return (firstCell == null);
 	}
