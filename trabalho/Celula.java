@@ -3,6 +3,6 @@ public class Celula {
         this.valor = valor;
     }
     int valor;
-    Celula next;
+    Celula prox;
 }
 
