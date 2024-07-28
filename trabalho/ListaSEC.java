@@ -21,5 +21,26 @@ public class ListaSEC {
             c.prox = head;
          }
     }
+    public void inserirNoInicio (Celula c ){
+        Celula aux = head.prox;
+        head.prox = c;
+        c.prox = aux;
+    }
+    public Celula pesquisar(int v) {
+        if (empty()) {
+            return null;
+        } else {
+            Celula aux = head.prox;
+            while (aux != head && aux.valor != v) {
+                aux = aux.prox;
+            }
+            if (aux == head) {
+                return null; // Se não encontrou o valor, retorna null
+            } else {
+                return aux; // Retorna a célula onde encontrou o valor
+            }
+        }
+    }
+
 }
 
