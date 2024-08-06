@@ -63,7 +63,7 @@ public Celula pesquisar(int v) {
     }
 	
 //-------------------------------------------------------------------------------------------
-	public void printer (){
+	public void imprimir (){
 		Celula aux = firstCell;
 		while( aux != null){
 			System.out.println("Valor = " + aux.valor);

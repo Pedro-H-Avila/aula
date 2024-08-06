@@ -1,1 +1,7 @@
+public class ListaDE(){
+firstCell = null;
+}
 
+public boolean empty(){
+return (primeiro == null);
+}
