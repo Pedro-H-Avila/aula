@@ -70,6 +70,24 @@ public Celula pesquisar(int v) {
 			aux = aux.prox;
 		}
 	}
-		
+//-------------------------------------------------------------------------------------------
+    public void removerPares() {
+        if (!empty()) {
+            
+            while (firstCell != null && firstCell.valor % 2 == 0) {
+                firstCell = firstCell.prox;
+            }
+
+            Celula aux = firstCell;
+
+            while (aux != null && aux.prox != null) {
+                if (aux.prox.valor % 2 == 0) {
+                    aux.prox = aux.prox.prox;
+                } else {
+                    aux = aux.prox;
+                }
+            }
+        }
+    }
 }
 
